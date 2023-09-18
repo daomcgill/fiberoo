@@ -1,5 +1,5 @@
 function fib() {
-  let arr = [];
+  const arr = [];
   for (let i = 0; i < 50; i++) {
     if (i < 2) {
       arr.push(i);
@@ -13,7 +13,7 @@ function fib() {
 console.log(fib());
 
 function numToStrings(arr) {
-  let strArr = _.map(arr, function (num) {
+  const strArr = _.map(arr, function (num) {
     return num.toString();
   });
   return strArr;
@@ -22,7 +22,7 @@ function numToStrings(arr) {
 console.log(numToStrings(fib()));
 
 function numEvenNums(arr) {
-  let evenNums = _.filter(arr, function (num) {
+  const evenNums = _.filter(arr, function (num) {
     return num % 2 === 0;
   });
   return evenNums.length;
